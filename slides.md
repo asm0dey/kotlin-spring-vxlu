@@ -402,10 +402,22 @@ Field error in object 'person' on field 'age': rejected value [null]
 
 ---
 
+## Also…
+
+```yaml
+spring:
+  jackson:
+    deserialization:
+      FAIL_ON_NULL_FOR_PRIMITIVES: true
+```
+
+---
+
 # Quick summary
 
 - `-Xjsr305=strict` will make the validation easier
 - For JVM primitive types we have to put `@field:NotNull` and mark them nullable
+- Sometimes can work it around with jackson settings
 
 
 ---
