@@ -7,7 +7,7 @@ drawings:
   persist: false
 colorSchema: 'dark'
 layout: intro
-highlighter: prism
+highlighter: shiki
 canvasWidth: 800
 ---
 
